@@ -8,6 +8,7 @@ import FindCarForm from "../Componants/UI/FindCarForm";
 import CarItem from "./../Componants/UI/CarItem";
 import "../assets/data/carData";
 import carData from "../assets/data/carData";
+import { Link } from "react-router-dom";
 const Home = () => {
 	return (
 		<Helmet tittle="Home">
@@ -34,11 +35,10 @@ const Home = () => {
 				<Container>
 					<Row className="">
 						<Col lg="12" className="text-center mb-5">
-							<h6 className="section-subtittle">
-								{" "}
-								You can find used cars here{" "}
-							</h6>
-							<h2 className="section-tittle">Used cars</h2>
+							<h6 className="section-subtittle">You can find used cars here</h6>
+							<Link to="/usedCars" className="section-tittle">
+								Used cars
+							</Link>
 						</Col>
 						{carData.slice(0, 6).map((item) => (
 							<CarItem item={item} key={item.id} />
