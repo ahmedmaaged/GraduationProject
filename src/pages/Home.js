@@ -9,6 +9,9 @@ import CarItem from "./../Componants/UI/CarItem";
 import "../assets/data/carData";
 import carData from "../assets/data/carData";
 import { Link } from "react-router-dom";
+import AboutSection from "../Componants/UI/AboutSection";
+import Services from "../Componants/UI/Services";
+import CarEvaluation from "../Componants/UI/CarEvaluation";
 const Home = () => {
 	return (
 		<Helmet tittle="Home">
@@ -30,12 +33,28 @@ const Home = () => {
 					</Container>
 				</div>
 			</section>
+			{/* ----------About Us section---------- */}
+			<div className="">
+				<AboutSection />
+			</div>
+			{/* --------Services section----------- */}
+			<section>
+				<Container>
+					<Row>
+						<Col lg="12" className="text-center mb-5">
+							<h3 className="section__subtittle">See Our</h3>
+							<h2 className="section__tittle">Popular Services</h2>
+						</Col>
+						<Services />
+					</Row>
+				</Container>
+			</section>
 			{/* ------cars for sell section-------- */}
 			<section>
 				<Container>
-					<Row className="">
+					<Row>
 						<Col lg="12" className="text-center mb-5">
-							<h6 className="section-subtittle">You can find used cars here</h6>
+							<h3 className="section-subtittle">You can find used cars here</h3>
 							<Link to="/usedCars" className="section-tittle">
 								Used cars
 							</Link>
@@ -46,6 +65,8 @@ const Home = () => {
 					</Row>
 				</Container>
 			</section>
+			{/* ----------Car Evalution------------ */}
+			<CarEvaluation />
 		</Helmet>
 	);
 };

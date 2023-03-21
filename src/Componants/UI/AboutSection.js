@@ -1,8 +1,8 @@
 import React from "react";
 import { Container, Row, Col } from "reactstrap";
-// import "../../styles/aboust-section.css";
-import aboutImage from "../assets/all-images/cars-img/mercedes-offer.png";
-const About = () => {
+import "../../styles/aboust-section.css";
+import aboutImage from "../../assets/all-images/cars-img/bmw-offer.png";
+const AboutSection = () => {
 	return (
 		<section>
 			<Container>
@@ -49,4 +49,4 @@ const About = () => {
 		</section>
 	);
 };
-export default About;
+export default AboutSection;

@@ -1,0 +1,12 @@
+.sevice-item span i {
+	font-size: 2.5rem;
+	color: #f9a826;
+}
+.sevice-item h6 {
+	font-size: 1.5rem;
+	font-weight: 600;
+	transition: 0.3s;
+}
+.sevice-item h6:hover {
+	color: #f9a826;
+}

@@ -1,0 +1,18 @@
+.carEvaluation-section {
+	background: linear-gradient(rgb(0, 13, 107, 0.9), rgb(0, 13, 107, 0.9)),
+		url(../assets/all-images/drive.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	padding: 80px 0px;
+}
+.carEvaluation-section .section_tittle {
+	color: #fff;
+	font-weight: 600;
+	line-height: 65px;
+}
+.carEvaluation-section button {
+	background-color: #fff;
+	color: #0006db;
+	font-weight: 600;
+}
