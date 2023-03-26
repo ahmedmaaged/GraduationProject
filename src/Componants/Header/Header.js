@@ -19,7 +19,15 @@ const navLinks = [
 
 	{
 		path: "/blogs",
-		display: "Blog",
+		display: "News",
+	},
+	{
+		path: "/usedCars",
+		display: "Used Cars",
+	},
+	{
+		path: "/carEvaluation",
+		display: "Car Evaluation",
 	},
 	{
 		path: "/contact",
@@ -30,7 +38,7 @@ const Header = () => {
 	return (
 		<header className="header">
 			{/* Header top */}
-			<div className="header_top">
+			{/* <div className="header_top">
 				<Container>
 					<Row>
 						<Col lg="6" md="6" sm="6">
@@ -54,9 +62,9 @@ const Header = () => {
 						</Col>
 					</Row>
 				</Container>
-			</div>
+			</div> */}
 			{/* Header middle */}
-			<div className="header_middle">
+			{/* <div className="header_middle">
 				<Container>
 					<Row>
 						<Col lg="3" md="3" sm="4">
@@ -108,40 +116,56 @@ const Header = () => {
 						</Col>
 					</Row>
 				</Container>
-			</div>
+			</div> */}
 			{/* Main Navigation */}
 			<div className="main_navbar">
 				<Container>
-					<div className="navigation_wrapper d-flex align-items-center justify-content-between">
-						<span className="mobile-menu">
-							<i class="ri-menu-2-line"></i>
-						</span>
-
-						<div className="navigation">
-							<div className="menu">
-								{navLinks.map((item, index) => (
-									<NavLink
-										to={item.path}
-										className={(navClass) =>
-											navClass.isActive ? "nav_active" : "nav_item"
-										}
-										key={index}
-									>
-										{item.display}
-									</NavLink>
-								))}
-							</div>
-						</div>
-
-						<div className="nav-right">
-							<div className="search-box">
-								<input type="text" placeholder="Search" />
-								<span>
-									<i class="ri-search-line"></i>
+					<Row>
+						<div className="navigation_wrapper d-flex align-items-center justify-content-between">
+							<Col xs md="auto">
+								<span className="mobile-menu">
+									<i class="ri-menu-2-line"></i>
 								</span>
-							</div>
+								<div className="navigation">
+									<div className="menu">
+										{navLinks.map((item, index) => (
+											<NavLink
+												to={item.path}
+												className={(navClass) =>
+													navClass.isActive ? "nav_active" : "nav_item"
+												}
+												key={index}
+											>
+												{item.display}
+											</NavLink>
+										))}
+									</div>
+								</div>
+							</Col>
+							<Col xs={3} md="auto">
+								<div className="nav-right">
+									<div className="search-box">
+										<input type="text" placeholder="Search" />
+										<span>
+											<i class="ri-search-line"></i>
+										</span>
+									</div>
+								</div>
+							</Col>
+							<Col xs={3} md="auto">
+								<div className="header_top_right d-flex align-items-center justify-content-end gap-3">
+									<Link to="#">
+										<i class="ri-login-circle-line align-items-center gap-1"></i>{" "}
+										Login
+									</Link>
+									<Link to="#">
+										<i class="ri-user-line align-items-center gap-1"></i>{" "}
+										Register
+									</Link>
+								</div>
+							</Col>
 						</div>
-					</div>
+					</Row>
 				</Container>
 			</div>
 		</header>

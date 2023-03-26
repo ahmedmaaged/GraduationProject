@@ -22,7 +22,7 @@ const HeroSlider = () => {
 						<h6 className="text-light mb-3">Gladly you can sell your car</h6>
 						<h1 className="text-light mb-4">SELL NOW</h1>
 						<button className="btn reserve-btn mt-4">
-							<Link to="/cars">Sell my car </Link>
+							<Link to="/sellMyCar">Add Post </Link>
 						</button>
 					</div>
 				</Container>
@@ -33,7 +33,7 @@ const HeroSlider = () => {
 						<h6 className="text-light mb-3">Gladly you can sell your car</h6>
 						<h1 className="text-light mb-4">SELL NOW</h1>
 						<button className="btn reserve-btn mt-4">
-							<Link to="/cars">Sell my car</Link>
+							<Link to="/sellMyCar">Add Post</Link>
 						</button>
 					</div>
 				</Container>
@@ -44,7 +44,7 @@ const HeroSlider = () => {
 						<h6 className="text-light mb-3">Gladly you can sell your car</h6>
 						<h1 className="text-light mb-4">SELL NOW</h1>
 						<button className="btn reserve-btn mt-4">
-							<Link to="/sellMyCar">Sell my car</Link>
+							<Link to="/sellMyCar">Add Post</Link>
 						</button>
 					</div>
 				</Container>

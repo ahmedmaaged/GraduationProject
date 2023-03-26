@@ -77,7 +77,7 @@ const Footer = () => {
 							</p>
 							<p className="office__info">Phone: +0995345875365</p>
 
-							<p className="office__info">Email: kkkkamel@gmail.com</p>
+							<p className="office__info">Email: CarscontactEGY@gmail.com</p>
 
 							<p className="office__info">Lorem impsum lorem ipsum</p>
 						</div>
@@ -100,7 +100,7 @@ const Footer = () => {
 						<div className="footer__bottom">
 							<p className="section__description d-flex align-items-center justify-content-center gap-1 pt-4">
 								<i class="ri-copyright-line"></i>Copyright {year}, Developed by
-								Ahmed Kamel. All rights reserved.
+								Our Team. All rights reserved.
 							</p>
 						</div>
 					</Col>
