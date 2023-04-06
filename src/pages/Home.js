@@ -12,6 +12,7 @@ import { Link } from "react-router-dom";
 import AboutSection from "../Componants/UI/AboutSection";
 import Services from "../Componants/UI/Services";
 import CarEvaluation from "../Componants/UI/CarEvaluation";
+import Testimonial from "../Componants/UI/Testimonial";
 const Home = () => {
 	return (
 		<Helmet tittle="Home">
@@ -67,6 +68,19 @@ const Home = () => {
 			</section>
 			{/* ----------Car Evalution------------ */}
 			<CarEvaluation />
+			{/* =========== testimonial section =========== */}
+			<section>
+				<Container>
+					<Row>
+						<Col lg="12" className="mb-4 text-center">
+							<h6 className="section__subtitle">Expert says</h6>
+							<h2 className="section__title">cars reviwes</h2>
+						</Col>
+
+						<Testimonial />
+					</Row>
+				</Container>
+			</section>
 		</Helmet>
 	);
 };
